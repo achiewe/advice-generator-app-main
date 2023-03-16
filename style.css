@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --neon-green:#53FFAA;
+    --light-cyan:#CEE3E9;
+    --grayish-blue:#4F5D74;
+    --dark-grayish-blue:#313A48;
+    --dark-blue:#202733;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+}
+
+.main-card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:343px;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 10px;
+    padding-top:40px;
+    padding-bottom: 64px;
+}
+
+.main-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:295px;
+}
+
+#content-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+
+.advice-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+}
+
+#advice{
+    font-family: 'Manrope', sans-serif ;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 15px;
+    letter-spacing: 3.4571425914764404px;
+    text-align: center;
+    color:var(--neon-green);
+}
+
+#advice-span{
+    font-family: 'Manrope', sans-serif ;
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 15px;
+    letter-spacing: 3.4571425914764404px;
+    text-align: center;
+    color:var(--neon-green);
+}
+
+#advice-p{
+    width:295px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: -0.2571428716182709px;
+    text-align: center;
+    color:var(--light-cyan);
+}
+
+
+.desktop-divider{
+    display:none;
+}
+
+#button-dice{
+    position: absolute;
+    bottom:-30px;
+    width:64px;
+    height:64px;
+    border-radius: 100px;
+    border:none;
+    background-color: var(--neon-green);
+    background-image: url("./images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+}
+
+
+
+
+
+/* desktop version */
+/* desktop version */
+/* desktop version */
+/* desktop version */
+/* desktop version */
+/* desktop version */
+/* desktop version */
+/* desktop version */
+/* desktop version */
+
+
+@media screen and (min-width:1024px){
+
+
+    .main-card{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width:540px;
+        background-color: var(--dark-grayish-blue);
+        border-radius: 10px;
+        padding-top:48px;
+        padding-bottom: 72px;
+    }
+
+    .main-section{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:444px;
+    }
+
+    #content-div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+    }
+
+    .advice-text{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:24px;
+    }
+
+    #advice{
+        font-family: 'Manrope', sans-serif ;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 18px;
+        letter-spacing: 4.085713863372803px;
+        text-align: center;
+        color:var(--neon-green);
+    }
+
+    #advice-span{
+        font-family: 'Manrope', sans-serif ;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 18px;
+        letter-spacing: 4.085713863372803px;
+        text-align: center;
+        color:var(--neon-green);
+    }
+
+    #advice-p{
+        width:444px;
+        font-family:'Manrope', sans-serif; 
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 38px;
+        letter-spacing: -0.30000001192092896px;
+        text-align: center;
+    }
+
+    .desktop-divider{
+        display:block;
+    }
+
+    .mobile-divider{
+        display:none;
+    }
+
+    #button-dice{
+        position: absolute;
+        bottom:-30px;
+        width:64px;
+        height:64px;
+        border-radius: 100px;
+        border:none;
+        background-color: var(--neon-green);
+        background-image: url("./images/icon-dice.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor:pointer;
+    }
+
+    #button-dice:hover{
+        box-shadow: 0px 0px 40px var(--neon-green);
+    }
+}
